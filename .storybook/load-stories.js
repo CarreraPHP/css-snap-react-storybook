@@ -1,5 +1,5 @@
-const req = require.context("../src", true, /\.story.tsx?$/);
+const req = require.context("../src", true, /\.story.jsx?$/);
 
 export function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach((filename) => req(filename));
 }
